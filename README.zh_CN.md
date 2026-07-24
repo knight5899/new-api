@@ -114,11 +114,12 @@
 git clone https://github.com/QuantumNous/new-api.git
 cd new-api
 
-# 编辑 docker-compose.yml 配置
-nano docker-compose.yml
+# 创建并编辑本地环境配置
+cp docker-compose.env.example .env
+nano .env
 
 # 启动服务
-docker-compose up -d
+docker compose up -d
 ```
 
 <details>
@@ -155,7 +156,7 @@ docker run --name new-api -d --restart always \
 > [!WARNING]
 > 将本项目作为面向公众的生成式 AI 服务或 API 转售服务运营时，使用者应先完成备案、内容安全、实名、日志留存、税务、支付和上游授权等合规义务。
 
-📖 更多部署方式请参考 [部署指南](https://docs.newapi.pro/zh/docs/installation)
+📖 更多部署方式请参考 [部署指南](https://www.newapi.ai/zh/docs/installation)，本地 Docker Compose 可参考 [本地部署 runbook](./docs/installation/docker-compose-local.md)
 
 ---
 
@@ -163,7 +164,7 @@ docker run --name new-api -d --restart always \
 
 <div align="center">
 
-### 📖 [官方文档](https://docs.newapi.pro/zh/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
+### 📖 [官方文档](https://www.newapi.ai/zh/docs) | [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/QuantumNous/new-api)
 
 </div>
 
@@ -171,17 +172,17 @@ docker run --name new-api -d --restart always \
 
 | 分类 | 链接 |
 |------|------|
-| 🚀 部署指南 | [安装文档](https://docs.newapi.pro/zh/docs/installation) |
-| ⚙️ 环境配置 | [环境变量](https://docs.newapi.pro/zh/docs/installation/config-maintenance/environment-variables) |
-| 📡 接口文档 | [API 文档](https://docs.newapi.pro/zh/docs/api) |
-| ❓ 常见问题 | [FAQ](https://docs.newapi.pro/zh/docs/support/faq) |
-| 💬 社区交流 | [交流渠道](https://docs.newapi.pro/zh/docs/support/community-interaction) |
+| 🚀 部署指南 | [安装文档](https://www.newapi.ai/zh/docs/installation) |
+| ⚙️ 环境配置 | [环境变量](https://www.newapi.ai/zh/docs/installation/config-maintenance/environment-variables) |
+| 📡 接口文档 | [API 文档](https://www.newapi.ai/zh/docs/api) |
+| ❓ 常见问题 | [FAQ](https://www.newapi.ai/zh/docs/support/faq) |
+| 💬 社区交流 | [交流渠道](https://www.newapi.ai/zh/docs/support/community-interaction) |
 
 ---
 
 ## ✨ 主要特性
 
-> 详细特性请参考 [特性说明](https://docs.newapi.pro/zh/docs/guide/wiki/basic-concepts/features-introduction)
+> 详细特性请参考 [特性说明](https://www.newapi.ai/zh/docs/guide/wiki/basic-concepts/features-introduction)
 
 ### 🎨 核心功能
 
@@ -338,7 +339,7 @@ docker run --name new-api -d --restart always \
 | `PYROSCOPE_BLOCK_RATE` | Pyroscope block 采样率                               | `5` |
 | `HOSTNAME` | Pyroscope 标签里的主机名                                          | `new-api` |
 
-📖 **完整配置：** [环境变量文档](https://docs.newapi.pro/zh/docs/installation/config-maintenance/environment-variables)
+📖 **完整配置：** [环境变量文档](https://www.newapi.ai/zh/docs/installation/config-maintenance/environment-variables)
 
 </details>
 
@@ -353,10 +354,11 @@ git clone https://github.com/QuantumNous/new-api.git
 cd new-api
 
 # 编辑配置
-nano docker-compose.yml
+cp docker-compose.env.example .env
+nano .env
 
 # 启动服务
-docker-compose up -d
+docker compose up -d
 ```
 
 </details>
